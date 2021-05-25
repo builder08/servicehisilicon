@@ -109,8 +109,8 @@ DEFINE_REF(eServiceFactoryHisilicon)
 RESULT eServiceFactoryHisilicon::play(const eServiceReference &ref, ePtr<iPlayableService> &ptr)
 {
 		// check resources...
-	ptr = new eServiceHisilicon(ref);
-	return 0;
+	ptr=0;
+	return -1;
 }
 
 RESULT eServiceFactoryHisilicon::record(const eServiceReference &ref, ePtr<iRecordableService> &ptr)
